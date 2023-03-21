@@ -11,7 +11,8 @@ imagemaps:
   # - 01248163264128256
   # Path to the folder where image files will be saved
   path: "plugins/ImageMaps/images/"
-  # if enabled will inform user of when their processing is complete.
-  # true by default, but can be turned off.
-  debug: true
+  # responds to the user in channel message is sent (default to true)
+  reply: true
+  # logs debug messages in console
+  debug: false
 

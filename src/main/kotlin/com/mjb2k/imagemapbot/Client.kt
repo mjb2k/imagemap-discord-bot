@@ -108,7 +108,7 @@ class Client(private val plugin: ImageMapBot) {
                 }
 
                 // communicate that we're processing players file
-                if (plugin.configManager.imagemaps.debug) {
+                if (plugin.configManager.imagemaps.reply) {
                     message.channel.awaitFirstOrNull()?.let {
                         it.createMessage(
                             "Processing attachments %s".format(message.author.get().mention)
@@ -127,7 +127,7 @@ class Client(private val plugin: ImageMapBot) {
                     /* if not a PNG file then we stop execution */
                     if (!plugin.fileScanner.scan(pathToFile)) {
                         // communicate with player that this attachement is not a PNG
-                        if (plugin.configManager.imagemaps.debug) {
+                        if (plugin.configManager.imagemaps.reply) {
                             message.channel.awaitFirstOrNull()?.let {
                                 it.createMessage(
                                     "This is not a PNG image! %s %s".format(message.author.get().mention, filename)
@@ -150,7 +150,7 @@ class Client(private val plugin: ImageMapBot) {
                     }
                     else {
                         // communicate upload complete, use /imagemaps place <filename>
-                        if (plugin.configManager.imagemaps.debug) {
+                        if (plugin.configManager.imagemaps.reply) {
                             message.channel.awaitFirstOrNull()?.let {
                                 it.createMessage(
                                     "Upload complete, you may use '/imagemap place %s' to place your image %s".format(

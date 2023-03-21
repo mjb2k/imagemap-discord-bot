@@ -9,6 +9,7 @@ class ConfigManager(private val plugin: ImageMapBot) : CustomConfig(plugin, "con
         val debug get() = section.requireBoolean("debug")
         val channels get() = section.requireStringList("channels")
         val path get() = section.requireTrimmedString("path")
+        val reply get() = section.requireBoolean("reply")
     }
 
     val imagemaps get() = ImageMaps(config.getSection("imagemaps"))
