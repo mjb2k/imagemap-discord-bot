@@ -1,6 +1,14 @@
-<img src="img/img.png" width=200 height=200/>
-<img src="img/plus.png" width=200 height=200/>
-<img src="img/discord.png" width=200 height=200/>
+<div id="banner">
+    <div class="inline-block">
+        <img src="img/img.png" width=200 height=200/>
+    </div>
+    <div class="inline-block">
+        <img src="img/plus.png" width=200 height=200/>
+    </div>
+    <div class="inline-block">
+        <img src="img/discord.png" width=200 height=200/>
+    </div>
+</div>
 
 # Imagemaps-Discord-Bot
 This plugin is meant to hook a discord bot with 
@@ -34,6 +42,5 @@ should hook into an existing bot on your server from one of those other plugins.
 is set the discord-token field to the token of one of your existing bots, and setup the channelIds accordingly as well. 
 
 
-Todo:
-* Finish README
+# Todo
 * Verify images are multiples of 128x128
