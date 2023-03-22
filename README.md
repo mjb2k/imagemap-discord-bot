@@ -36,6 +36,5 @@ should hook into an existing bot on your server from one of those other plugins.
 is set the discord-token field to the token of one of your existing bots, and setup the channelIds accordingly as well.
 
 
-Todo:
-* Finish README
+# Todo
 * Verify images are multiples of 128x128
