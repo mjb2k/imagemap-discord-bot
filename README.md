@@ -1,31 +1,25 @@
-<div id="banner">
-    <div class="inline-block">
-        <img src="img/img.png" width=200 height=200/>
-    </div>
-    <div class="inline-block">
-        <img src="img/plus.png" width=200 height=200/>
-    </div>
-    <div class="inline-block">
-        <img src="img/discord.png" width=200 height=200/>
-    </div>
-</div>
+<p float="left">
+<img src="img/img.png" width=200 height=200/> 
+<img src="img/plus.png" width=200 height=200/>
+<img src="img/discord.png" width=200 height=200/> 
+</p>
 
 # Imagemaps-Discord-Bot
-This plugin is meant to hook a discord bot with 
+This plugin is meant to hook a discord bot with
 imagemaps that allow discord users to upload PNG files on discord that are then
 made available to them in-game via imagemaps.
 
 # Execution
 0. Move the jar file into your plugins folder and create the imagemapbot directory with the preset config.yml
-1. First, you'll need an existing bot on your discord server, 
-you can check out the "Creating the bot" section of this [guide](https://github.com/dominik-korsa/discord-integration/wiki/Configuring-a-Discord-bot) to create one,
-or if you already have one you can move on to the next step
+1. First, you'll need an existing bot on your discord server,
+   you can check out the "Creating the bot" section of this [guide](https://github.com/dominik-korsa/discord-integration/wiki/Configuring-a-Discord-bot) to create one,
+   or if you already have one you can move on to the next step
 2. Copy and paste your bots token into the discord-token field in config.yml
-3. Copy and paste the channel id(s) you wish to have image submissions uploaded in the config.yml. 
-(you may need to change your view to developer in Discord)
+3. Copy and paste the channel id(s) you wish to have image submissions uploaded in the config.yml.
+   (you may need to change your view to developer in Discord)
 4. Change the path field in config.yml to be the absolute path to your ImageMaps/images directory.
 5. Test by uploading an image to your submissions channel and seeing the success reply.
-![succes.png](img/success.png)
+   ![succes.png](img/success.png)
 
 # Credit
 Much of the codebase is based off an [existing Discord plugin](https://github.com/mjb2k/discord-integration) I built this integration
@@ -39,8 +33,9 @@ than letting it live in the other discord bot. This is because there are several
 Discord bot plugins, and limiting this feature to just one is not robust. This plugin is
 not meant to host a standalone discord bot, though it's capable of doing that. Rather, this plugin
 should hook into an existing bot on your server from one of those other plugins. All you need to do
-is set the discord-token field to the token of one of your existing bots, and setup the channelIds accordingly as well. 
+is set the discord-token field to the token of one of your existing bots, and setup the channelIds accordingly as well.
 
 
-# Todo
+Todo:
+* Finish README
 * Verify images are multiples of 128x128
