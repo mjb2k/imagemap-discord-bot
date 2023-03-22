@@ -1,4 +1,6 @@
-![img.png](img/img.png) ![img_2.png](img/plus.png) ![img.png](img/discord.png)
+<img src="img/img.png" width=200 height=200/>
+<img src="img/plus.png" width=200 height=200/>
+<img src="img/discord.png" width=200 height=200/>
 
 # Imagemaps-Discord-Bot
 This plugin is meant to hook a discord bot with 
