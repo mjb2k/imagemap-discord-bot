@@ -126,11 +126,11 @@ class Client(private val plugin: ImageMapBot) {
 
                     /* if not a PNG file then we stop execution */
                     if (!plugin.fileScanner.scan(pathToFile)) {
-                        // communicate with player that this attachement is not a PNG
+                        // communicate with player that this attachement is not a PNG or too large
                         if (plugin.configManager.imagemaps.reply) {
                             message.channel.awaitFirstOrNull()?.let {
                                 it.createMessage(
-                                    "This is not a PNG image! %s %s".format(message.author.get().mention, filename)
+                                    "This is not a PNG image, or is too large!! %s %s".format(message.author.get().mention, filename)
                                 ).withAllowedMentions(AllowedMentions.builder().allowUser(message.author.get().id).build())
                             }?.awaitFirstOrNull()
                         }
