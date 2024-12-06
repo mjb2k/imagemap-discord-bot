@@ -1,9 +1,9 @@
 name: imagemapbot
-version: 1.1
+version: 1.2
 author: Matthew Boyer
 main: com.mjb2k.imagemapbot.ImageMapBot
-api-version: 1.13
+api-version: 1.21
 softdepend: ["ImageMaps"]
 load: POSTWORLD
-prefix: Imagemapbot 1.1
+prefix: Imagemapbot 1.2
 

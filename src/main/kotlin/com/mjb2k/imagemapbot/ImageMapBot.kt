@@ -2,10 +2,9 @@ package com.mjb2k.imagemapbot
 
 import com.github.shynixn.mccoroutine.bukkit.launch
 import com.mjb2k.imagemapbot.config.ConfigManager
+import com.mjb2k.imagemapbot.exceptions.MissingIntentsException
 import com.mjb2k.imagemapbot.imagemaps.FileScanner
 import com.mjb2k.imagemapbot.imagemaps.ImageMapsMigrator
-import com.mjb2k.imagemapbot.exceptions.MissingIntentsException
-
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import org.bukkit.plugin.java.JavaPlugin
