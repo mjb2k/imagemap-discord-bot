@@ -49,6 +49,7 @@ class Client(private val plugin: ImageMapBot) {
                 .login()
                 .awaitFirstOrNull() ?: throw Exception("Failed to connect to Discord")
         } catch (error: CloseException) {
+            plugin.logger.severe("Client failed to connect to discord.")
             if (error.closeStatus.code == 4014) throw MissingIntentsException(client.applicationId.awaitFirst())
             throw error
         }
@@ -74,7 +75,6 @@ class Client(private val plugin: ImageMapBot) {
                             val channelId = it.message.channelId
                             when {
                                 imageMapChannels.contains(channelId) -> onSyncedMessage(it.message)
-
                                 else -> messagesDebug(
                                     "Ignoring message ${it.message.id.asString()}, channel ${
                                         it.message.channelId.asString()
